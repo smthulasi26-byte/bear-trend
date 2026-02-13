@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="song1.mp3" type="audio/mp3">
+</audio>
+
+<div class="center-screen" id="page1">
+  <h1>Will you be my Valentine? 💖</h1>
+  <button onclick="partyPopper(); startLove()">YES 💘</button>
+  <button id="noBtn">NO 😢</button>
+</div>
+
+<div class="hidden" id="page2">
+  <div class="photo-row">
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="myphoto1.jpg">
+        </div>
+        <div class="flip-back">
+          You are my favorite person 🥺🩶
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="myphoto2.jpg">
+        </div>
+        <div class="flip-back">
+          Every moment with you is special 🐾✨
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="myphoto3.jpg">
+        </div>
+        <div class="flip-back">
+          I’m so lucky to have you 😘💋
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="instruction">💡 Click the photos to see a surprise! 🥰</p>
+
+
+  <button onclick="nextPage()">Next ➡</button>
+</div>
+
+<div class="hidden center-screen" id="page3">
+  <img src="myphoto5.jpg" class="main-photo">
+
+  <p class="love-paragraph">
+  Happy Valentine’s Day my love 🩶<br>
+  Lingges, I just want you to know how much you truly mean to me.<br>
+  Loving you isn’t just a feeling, it’s something I carry in my heart every single day.<br>
+  No matter what happens, I will always support you in everything you do.<br>
+  I will never give up on you, even on the days when things feel hard.<br>
+  I believe in you, in your strength, in your dreams, and in the person you are becoming.<br>
+  I promise to always stand by your side, through your highs and your lows.<br>
+  Cheering you on and holding your hand through it all.<br>
+  You’re not alone, not now, not ever because I’m always here for you.
+</p>
+
+
+  <button onclick="proposalPage()">Next ➡</button>
+</div>
+
+<div class="hidden center-screen" id="page4">
+  <img src="kneeling-bear.gif" class="bear">
+
+  <h2>Will you accept my love? 💍</h2>
+  <button onclick="partyPopper(); finalPage()">ACCEPT 💖</button>
+  <button id="denyBtn">DENY 😭</button>
+</div>
+
+<div class="hidden center-screen" id="page5">
+  <img src="hugging.gif" class="bear">
+  <h1>I LOVE YOU SO MUCH 😘😘😘</h1>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
